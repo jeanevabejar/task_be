@@ -36,7 +36,8 @@ class CategoriesController < ApplicationController
   # DELETE /categories/1
   def destroy
     if @category.destroy
-      render json: { message: 'Category deleted successfully' }, status: :ok
+      @categories = current_user.categories
+      render json: @categories
     else
       render json: { error: 'Failed to delete category' }, status: :unprocessable_entity
     end

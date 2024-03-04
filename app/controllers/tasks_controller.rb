@@ -37,6 +37,8 @@ class TasksController < ApplicationController
   # DELETE /categories/:category_id/tasks/1
   def destroy
     @task.destroy
+    @tasks = @category.tasks
+    render json: @tasks
   end
 
   private
