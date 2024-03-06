@@ -1,11 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
+  todo: MyString
   category: one
 
 two:
-  title: MyString
-  description: MyText
+  todo: MyString
   category: two
